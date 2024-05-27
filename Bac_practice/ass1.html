@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <button class="button1" onclick="clicked()">click me</button>
+        <button class="button2" onclick="addlist()">add the list</button>
+    </div>
+
+    
+    <script>
+        function clicked(){
+            alert("button clicked!");
+        }
+
+         function addlist(){
+                const ul= document.createElement("ul");
+                const li1= document.createElement("li");
+                li1.innerText= Math.random();
+                ul.appendChild(li1);
+                const li2= document.createElement("li");
+                li2.innerText= Math.random();
+                ul.appendChild(li2);
+                const li3= document.createElement("li");
+                li3.innerText= Math.random();
+                ul.appendChild(li3);
+
+                document.body.querySelector(".main").appendChild(ul);
+
+                var colo = document.querySelector('ul');
+                colo.addEventListener('mouseover',(e) =>{
+           document.body.style.backgroundColor = 'blue';
+         } )
+         colo.addEventListener('mouseout',(e) =>{
+           document.body.style.backgroundColor = 'pink';
+         })
+                
+                colo.forEach((e)=>{ e.addEventListener('mouseover',(e) =>{
+           document.body.style.backgroundColor = 'blue';
+         } )
+         e.addEventListener('mouseout',(e) =>{
+           document.body.style.backgroundColor = 'pink';
+         } )
+        })
+       
+        }
+       // const addList = document.getElementsByClassName("button2");
+
+        
+      
+    
+        
+
+       
+    </script>
+</body>
+</html>

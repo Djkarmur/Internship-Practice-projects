@@ -1,0 +1,38 @@
+body{
+    background-color: #F1FAFA;
+}
+.container-fluid{
+    background-color:#CBE7E7;
+   padding: 10px;
+}
+
+.nature{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:10px;
+}
+img{
+    height:200px;
+    width:150px;
+    
+    
+}
+
+.card{
+    margin:10px;
+    background-color: #9AC9C9;
+    border:none;
+    transition: all 1s;
+   
+
+}
+ .card:hover{
+    transform: scale(1.1);
+ }
+
+.btn{
+    background-color: #3E8585;
+    border:none;
+   
+}
